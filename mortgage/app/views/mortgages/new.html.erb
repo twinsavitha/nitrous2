@@ -1,0 +1,10 @@
+<%= form_for :article, url: {action: "play",controller:"mortgages"} do |f| %>
+             <ol>
+               <% @a.each do |users| %>
+               <br />
+               <%= f.radio_button "one",  users  %> <%= users %><br />
+               
+               <% end %>
+            </ol>
+        <%= f.submit :score %>
+        <% end %>

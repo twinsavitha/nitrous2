@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  catalog: MyString
+  subcatalog: MyString
+  vcpu: 1
+  vram: 1
+  vnic: 1
+
+two:
+  catalog: MyString
+  subcatalog: MyString
+  vcpu: 1
+  vram: 1
+  vnic: 1

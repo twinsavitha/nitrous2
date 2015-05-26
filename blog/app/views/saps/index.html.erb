@@ -1,0 +1,28 @@
+<h1>Listing SAP_Products</h1>
+ 
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Catalod_id</th>
+    <th>sapproduct</th>
+    <th>platform</th>
+    <th>saps</th>
+    <th>mem</th>
+    <th>iops</th>
+    <th>disksize</th>
+  </tr>
+ 
+  <% @saps.each do |sap| %>
+    <tr>
+      <td><%= sap.id%></td>
+      <td><%= sap.Catalog_id %></td>
+      <td><%= sap.sapproduct %></td>
+      <td><%= sap.platform %></td>
+      <td><%= sap.saps %></td>
+      <td><%= sap.mem %></td>
+      <td><%= sap.iops %></td>
+      <td><%= sap.disksize %></td>
+      <td><%= link_to 'Destroy', sap_path(sap),method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

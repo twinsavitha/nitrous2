@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <body>  
+      <header> <div class = "one"> Yo Level!!</div></header>
+      <div id="mainn">
+        <div id="naaam"><%= @naaam %></div>
+        <%= form_for :article, url: {action: "play",controller:"articles"} do |f| %>
+             <ol>
+               <% @a.each_with_index do |users,index| %>
+               <br />
+               <li><%= users.question %></li>
+               <%= f.radio_button "#{users.id}",  users.optiona  %> <%= users.optiona %><br />
+               <%= f.radio_button "#{users.id}",  users.optionb %> <%= users.optionb %><br />
+               <%= f.radio_button "#{users.id}",  users.optionc %> <%= users.optionc %><br />
+                 <% if users.optiond!= " " %>
+                    <%= f.radio_button "#{users.id}",  users.optiond %> <%= users.optiond %><br />
+                 <% end %>
+               <% end %>
+            </ol>
+        <%= f.submit :score %>
+        <% end %>
+      </div>
+      
+      
+  </body>
+</html>
+  

@@ -1,0 +1,16 @@
+<h1>Listing products</h1>
+ 
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Landscape</th>
+  </tr>
+ 
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.id%></td>
+      <td><%= product.landscape %></td>
+      <td><%= link_to 'Destroy', product_path(product),method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

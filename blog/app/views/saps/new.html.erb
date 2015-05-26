@@ -1,0 +1,33 @@
+<%= form_for :sap, url: saps_path do |f| %>
+   <p>
+      <%= f.label :Catalog_id %><br>
+      <%= f.text_area :Catalog_id  %>
+    </p>
+    <p>
+      <%= f.label :sapproduct %><br>
+      <%= f.text_area :sapproduct %>
+    </p>
+    <p>
+      <%= f.label :platform %><br>
+      <%= f.text_area :platform %>
+    </p>
+    <p>
+      <%= f.label :saps %><br>
+      <%= f.text_area :saps %>
+    </p>
+    <p>
+      <%= f.label :mem %><br>
+      <%= f.text_area :mem %>
+    </p>
+    <p>
+      <%= f.label :iops %><br>
+      <%= f.text_area :iops %>
+    </p>
+    <p>
+      <%= f.label :disksize %><br>
+      <%= f.text_area :disksize %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>

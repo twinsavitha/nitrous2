@@ -1,0 +1,19 @@
+physical
+virtual
+<table >	
+	 <tr>
+      <th>physical</th>
+      <th>virtual</th>
+    </tr>
+
+
+
+ <% (0...@dimension).each do |i| %>
+    <tr>
+    	<% puts "iii" %>
+    	<% puts i %>
+      <td><%= @physical[i] %></td>
+      <td><%= @virtual[i] %></td>
+    </tr>
+    <% end %>
+</table>    

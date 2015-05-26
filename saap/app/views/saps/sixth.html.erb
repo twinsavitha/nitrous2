@@ -1,0 +1,23 @@
+<table >	
+	 <tr>
+      <th>components</th>
+      <th>catalog</th>
+      <th>type</th>
+    </tr>
+
+
+
+ <% (0..2).each do |i| %>
+    <tr>
+    	<% puts "iii" %>
+    	<% puts i %>
+      <td><%= @components[i] %></td>
+      <td><%= @catalog[i] %></td>
+      <td><%= @type[i] %></td><br>
+    </tr>
+    
+    <% end %>
+</table>    
+
+
+<%= link_to "physical/virtual", saps_view_path %>

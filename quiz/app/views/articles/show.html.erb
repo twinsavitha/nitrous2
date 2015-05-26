@@ -1,0 +1,15 @@
+<div id="firstt">You scoreddddddd <%= @p %>!!!<br></div>
+<div id="secondd">
+    Correctly answered questions are:
+    <% @q.each do |t| %>
+    <br><%= t%>
+    <% end %>
+</div>
+<div id="third">
+    The answers that were incorrect are:
+    <% @r.each do |t| %>
+    <br><%= t%>
+    <% end %>
+</div>
+
+

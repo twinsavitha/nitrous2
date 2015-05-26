@@ -1,0 +1,24 @@
+Product list
+<table >
+    <tr>
+      <th>Product</th>
+      <th>Platform</th>
+    </tr>
+
+    <% @a.each do |post| %>
+    <tr>
+      <td><%= post.product %></td>
+      <td><%= post.platform %></td>
+    </tr>
+    <% end %>
+  </table>
+
+<%= form_for :Product, url: saps_showw_path do |f| %>
+  <div>
+    <%= f.label :Product %><br>
+    <%= f.text_field :Product %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+  <% end %>

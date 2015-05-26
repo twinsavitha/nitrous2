@@ -1,0 +1,16 @@
+<h1>Listing catalogs</h1>
+ 
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Catalogs</th>
+  </tr>
+ 
+  <% @catalogs.each do |catalog| %>
+    <tr>
+      <td><%= catalog.id%></td>
+      <td><%= catalog.cats %></td>
+     <td><%= link_to 'Destroy', catalog_path(catalog),method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,22 @@
+      <div id="final">
+        You scored <%= @scoree %>!!!
+      </div>
+<%= form_for :article, url: articles_show_path do |f| %>
+<%= hidden_field_tag "post_id", @scoree %>
+<%= hidden_field_tag "post_idd", @corr %>
+<%= hidden_field_tag "post_iddd", @wro %>
+      <div id="sumbit">
+      <%= submit_tag "Check yo answers!" %>
+      </div>
+<%end%>
+
+
+
+<!--<p><%= @p['x'] %></p>
+<p><%= @q['arr'] %></p>
+<p><%= @r['elem'] %></p>
+<p><%= @s['pri'] %></p>
+<p><%= @t['i'] %></p>-->
+<!-- <%=link_to articles_score_path do%>
+<!--<%=image_tag('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mD4ntxg6YPJoddMCEAIlWubw73iBneVUN9VtwJYROt-RDGOjXQ',width:'100',height:'50')%>
+<!--<%end%>   -->

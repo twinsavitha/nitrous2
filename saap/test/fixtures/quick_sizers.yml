@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product: MyString
+  platform: MyString
+  saps: 1
+  memory: 1
+  io: 1
+  iops: 1
+  disksize: 1
+
+two:
+  product: MyString
+  platform: MyString
+  saps: 1
+  memory: 1
+  io: 1
+  iops: 1
+  disksize: 1

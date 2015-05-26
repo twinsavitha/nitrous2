@@ -1,0 +1,13 @@
+
+<%= form_for :article, url: mortgages_create_path do |f| %>
+                     <tr>
+                         <td>Name:</td>
+                       <td><%= f.text_field :name %></td>
+                     </tr><br>
+                     <tr>
+                         <td>Employee ID:</td>
+                         <td> <%= f.text_field :empid %></td>
+                     </tr>
+      
+                     <%= f.submit value = "Submit" %>
+                     <%end %>

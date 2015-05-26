@@ -1,0 +1,19 @@
+
+<table >
+    <tr>
+      <th>server</th>
+      <th>vcpu</th>
+      <th>vram</th>
+      <th>netio</th>
+      <th>iops</th>
+      <th>disk</th>
+    </tr>
+
+    <% @value.each do |post| %>
+    <tr>
+    	<%post.each do |a| %>
+      <td><%= a[1] %></td>
+      <% end %>
+    </tr>
+    <% end %>
+  </table>

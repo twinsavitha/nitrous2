@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<body>  
+  <div>
+  <header><font size="12"> Yo Level!!</font> </header>
+  </div>
+  <div id="content">
+  <%= form_for :article, url: articles_play_path do |f| %>
+<ol>
+  <li>
+      <p>
+          x=10; This implies x is:
+      </p>
+      <div id = "rad">
+          <%= f.radio_button :x, "value" %>Value<br>
+          <%= f.radio_button :x, "class" %>Class<br>
+          <%= f.radio_button :x, "object" %>Object<br>
+      </div>
+  </li>
+  <li>
+      <p>
+          What are collect and map methdos?
+      </p>
+      <div id = "rad">
+          <%= f.radio_button :arr, "array_methods" %>Methods of array<br>
+          <%= f.radio_button :arr, "array_loops" %>Methods to loop through an array<br>
+          <%= f.radio_button :arr, "array_returns" %>Methods whose return values are in the form of an array<br>
+          <%= f.radio_button :arr, "all" %>All d above<br>
+      </div>
+  </li>
+  <li>
+      <p>
+          If a=[1,2,3,4,5,6,7,8]; puts a(2...5) gives?
+      </p>
+      <div id = "rad">
+          <%= f.radio_button :elem, "one" %>[2,3,4,5]<br>
+          <%= f.radio_button :elem, "two" %>[3,4,5,6]<br>
+          <%= f.radio_button :elem, "three" %>[3,4,5]<br>
+          <%= f.radio_button :elem, "four" %>[3,4]<br>
+      </div>
+  </li>  
+  <li>
+      <p>
+          <code>
+          name = " "<br>
+          unless name.length<br>
+          &nbsp;&nbsp;puts "printed“<br>
+          else<br>
+          &nbsp;&nbsp;puts “not printed<br>
+          end
+          </code>
+      </p>
+      <div id = "rad">
+          <%= f.radio_button :pri, "printed" %>Printed<br>
+          <%= f.radio_button :pri, "not_printed" %>Not printed<br>
+          <%= f.radio_button :pri, "never" %>that code never gets executed<br>
+      </div>
+  </li>
+  <li>
+      <p>
+          If &nbsp;<code> i || = 2</code>, puts i gives?
+      </p>
+      <div id = "rad">
+          <%= f.radio_button :i, "undefined" %>Undefined variable<br>
+          <%= f.radio_button :i, "zero" %>0<br>
+          <%= f.radio_button :i, "one" %>1<br>
+          <%= f.radio_button :i, "two" %>2<br>
+      </div>
+  </li>
+
+<p>
+  <%= f.submit value = "Score",:class => 'submit-btn'%>
+</p>
+  </ol>
+  </div>
+<!--<p> x=10; This implies x is: 
+  <%= f.select :gender, ['Value', 'Class', 'Object'] %>
+</p>-->
+<% end %>
+</body>
+</html>
