@@ -1,0 +1,18 @@
+
+<%= form_for :article, url: mortgages_create_path do |f| %>
+Folio no: <%= f.select :foliono, options_for_select(@a) %> <br>
+Scheme to invest: <br>
+Scheme Category:  <%= f.select :category, options_for_select(@b) %>
+Scheme:  <%= f.select :scheme, options_for_select(@c) %><br>
+Dividend option: <%= f.select :divoption, options_for_select(@d) %><br>
+ARN code: <%= f.text_field :arncode %><br>
+Investment amount: <%= f.text_field :amount %><br>
+Payment option: <%= f.select :payoption, options_for_select(@e) %><br>
+Payment bank: <%= f.select :paybank, options_for_select(@f) %><br>
+
+
+
+
+
+  <%= f.submit value = "Submit" %>
+                     <%end %>

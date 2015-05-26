@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  folio: MyString
+  schemecat: MyString
+  scheme: MyString
+  distopt: MyString
+  arncode: MyString
+  invamount: MyString
+  payoption: MyString
+  paybank: MyString
+
+two:
+  folio: MyString
+  schemecat: MyString
+  scheme: MyString
+  distopt: MyString
+  arncode: MyString
+  invamount: MyString
+  payoption: MyString
+  paybank: MyString

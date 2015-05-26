@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  versionnumber: 1.5
+  incident: MyString
+  modifications: MyString
+
+two:
+  versionnumber: 1.5
+  incident: MyString
+  modifications: MyString

@@ -1,0 +1,6 @@
+<% @ver_one.each do |users| %>
+Version Number: <%= users.versionnumber %> ,Event: <%= users.incident %>, Change: <%= users.modifications %> <br>
+<hr>
+<% end %>
+<%= link_to 'Search', versions_index_path %>
+ 

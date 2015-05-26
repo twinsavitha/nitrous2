@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+  <table>
+        <%= form_for :article, url: versions_create_path do |f| %>
+                     <tr>
+                         <td>version:</td>
+                       <td> <%= f.text_field :version %></td>
+                     </tr>
+                     <tr>
+                         <td>Event:</td>
+                       <td><%= f.text_field :event %></td>
+                     </tr>
+                     <tr>
+                         <td>change:</td>
+                         <td> <%= f.text_field :chang %></td>
+                     </tr>
+                     <tr>
+                       <td>
+                         <br><br><br>
+                         <%= f.submit value = "Submit" %>
+                       </td>
+                    </tr>
+                     <%end %>
+    
+  </table>
+  </body>
+</html>
+

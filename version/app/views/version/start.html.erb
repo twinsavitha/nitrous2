@@ -1,0 +1,14 @@
+<table>
+  <%= form_for :article, url: version_create_path do |f| %>
+                     <tr>
+                         <td>Event:</td>
+                       <td><%= f.text_field :event %></td>
+                     </tr>
+                     <tr>
+                         <td>version:</td>
+                       <td> <%= f.text_field :version %></td>
+                     </tr>
+</table>
+                     <%= f.submit value = "Submit" %>
+                     <%end %>
+

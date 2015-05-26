@@ -1,0 +1,18 @@
+<%= form_tag morts_index_path, :method => :get do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil, :class => "button postfix" %>
+<% end %>
+
+<% if @products.empty? %> 
+    <p>No products added to database</p>
+<% else %>
+    <ul>
+      <% @products.each do |product| %>
+          <li>
+         Folioo number:   <%= product.folio %><br> 
+        
+          </li>
+          <hr>
+      <% end %>
+    </ul>
+<% end %>

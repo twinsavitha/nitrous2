@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  versionn: MyString
+  eventt: MyString
+  changge: MyString
+
+two:
+  versionn: MyString
+  eventt: MyString
+  changge: MyString

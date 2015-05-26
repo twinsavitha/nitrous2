@@ -1,0 +1,6 @@
+<%= form_for :typee, url: mortgages_first_path do |f| %>
+Type: <%= f.select :type, options_for_select(@type) %> <br>
+  <%= f.submit value = "Submit" %>
+<%end %>
+
+<%= link_to 'Show all', mortgages_index_path %>

@@ -1,0 +1,15 @@
+
+<% @a.each do |users| %>
+Folio no: <%= users.folio %> 
+Scheme Category: <%= users.schemecat %> 
+Scheme: <%= users.scheme %> 
+Dividend option: <%= users.distopt %> 
+ARN code: <%= users.arncode %> 
+Investment amount: <%= users.invamount %> 
+Payment option: <%= users.payoption %> 
+Payment bank: <%= users.paybank %> 
+<hr>
+
+
+<% end %>
+<%= link_to 'New', morts_index_path %>
